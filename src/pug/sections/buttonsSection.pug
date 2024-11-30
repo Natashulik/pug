@@ -1,0 +1,18 @@
+section.buttonsSection
+  h2.buttonsSection__title Buttons
+  .buttonsSection__container
+    h3.buttonsSection__subtitle Button Primary
+    +button('Попробовать бесплатно', 'btn-primary', null)
+    h3.buttonsSection__subtitle Button Secondary
+    +button('Попробовать бесплатно', 'btn-secondary',  null)
+    h3.buttonsSection__subtitle Button Text
+    h3.buttonsSection__box
+      +button('Button', 'btn-text',  null)   
+      +button('Button', 'btn-text-icon', 'check')   
+      +button('Button', 'btn-icon-text', 'check')
+    h3.buttonsSection__subtitle Button Circle White
+    +button(null, 'btn-circle', 'arrow')
+    h3.buttonsSection__subtitle Button Icon
+    +button(null, 'btn-icon', 'arrow')
+    h3.buttonsSection__subtitle Button Close
+    +button(null, 'btn-close', 'close')

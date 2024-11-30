@@ -1,0 +1,39 @@
+@import "./fonts";
+
+@mixin responsive-sizing($prop, $min, $max, $minDisplay, $maxDisplay) {
+  $sizeDiff: $max - $min;
+  $displayDiff: $maxDisplay - $minDisplay;
+
+  #{$prop}: clamp(
+    #{$min}px,
+    calc(
+      #{$min}px +
+        (#{$sizeDiff} * ((100vw - #{$minDisplay}px) / #{$displayDiff}))
+    ),
+    #{$max}px
+  );
+}
+
+$max-width: 1480px;
+
+//fonts
+$font-family: "Inter";
+$second-family: "Jost";
+
+//colors
+$color-text: #181c24;
+$color-gray: #3d475a;
+$color-dark-blue: #192544;
+$color-green: #25ba7b;
+$color-green-hover: #00cd83;
+$color-green-light: rgba(37, 186, 123, 0.1);
+$color-green-light-hover: rgba(37, 186, 123, 0.2);
+$color-gray: #dee4ee;
+
+//breakpoints
+$breakpoints-xs: 400px;
+$breakpoints-sm: 576px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 992px;
+$breakpoints-xl: 1200px;
+$breakpoints-xxl: 1400px;

@@ -1,0 +1,87 @@
+h1.heading {
+  font-family: $font-family;
+  font-weight: 700;
+  line-height: 120%;
+  color: $color-text;
+
+  &.heading-desktop-large {
+    font-size: 52px;
+  }
+
+  &.heading-tablet-medium {
+    @media (max-width: 1200px) {
+      font-size: 42px;
+    }
+  }
+
+  &.heading-small {
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+  }
+}
+
+h2.heading {
+  font-family: $font-family;
+  font-weight: 700;
+  line-height: 130%;
+  color: $color-text;
+
+  &.heading-desktop-large {
+    font-size: 46px;
+  }
+
+  &.heading-tablet-medium {
+    @media (max-width: 1200px) {
+      font-size: 36px;
+    }
+  }
+
+  &.heading-small {
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+}
+
+h3.heading {
+  font-family: $font-family;
+  font-weight: 700;
+  line-height: 130%;
+  color: $color-text;
+
+  &.heading-desktop-large {
+    font-size: 32px;
+  }
+
+  &.heading-tablet-medium {
+    @media (max-width: 1200px) {
+      font-size: 24px;
+    }
+  }
+
+  &.heading-small {
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}
+
+h4.heading {
+  font-family: $font-family;
+  font-weight: 700;
+  line-height: 140%;
+  color: $color-text;
+
+  &.heading-desktop-large {
+    font-size: 20px;
+  }
+
+  &.heading-tablet-medium {
+    font-size: 20px;
+  }
+
+  &.heading-small {
+    font-size: 16px;
+  }
+}

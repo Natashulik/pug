@@ -1,0 +1,249 @@
+.btn-primary {
+  width: 100%;
+  padding-inline: 15px;
+  background: $color-green;
+  font-family: $font-family;
+  font-weight: 700;
+  line-height: 140%;
+  color: #fff;
+
+  &:hover {
+    background-color: $color-green-hover;
+  }
+
+  &:hover:active {
+    background-color: $color-green;
+  }
+
+  &.button-desktop-large {
+    max-width: 301px;
+    min-height: 65px;
+    padding-block: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px 0 rgba(37, 186, 123, 0.4);
+    font-size: 18px;
+  }
+
+  &.button-tablet-medium {
+    @media (max-width: 1200px) {
+      max-width: 222px;
+      min-height: 50px;
+      padding-block: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px 0 rgba(37, 186, 123, 0.4);
+      font-size: 14px;
+    }
+  }
+
+  &.button-small {
+    @media (max-width: 768px) {
+      max-width: 184px;
+      min-height: 37px;
+      padding-block: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px 0 rgba(37, 186, 123, 0.4);
+      font-size: 12px;
+    }
+  }
+}
+
+.btn-secondary {
+  width: 100%;
+  padding-inline: 15px;
+  background: $color-green-light;
+  font-family: $font-family;
+  font-weight: 700;
+  line-height: 140%;
+  color: $color-green;
+
+  &:hover {
+    background-color: $color-green-light-hover;
+  }
+
+  &.button-desktop-large {
+    max-width: 301px;
+    min-height: 65px;
+    padding-block: 20px;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+
+  &.button-tablet-medium {
+    @media (max-width: 1200px) {
+      max-width: 222px;
+      min-height: 50px;
+      padding-block: 15px;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+  }
+
+  &.button-small {
+    @media (max-width: 768px) {
+      max-width: 184px;
+      min-height: 37px;
+      padding-block: 10px;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+.btn-text {
+  font-family: $font-family;
+  font-weight: 700;
+  line-height: 140%;
+  color: $color-green;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+
+  &.button-desktop-large {
+    font-size: 18px;
+  }
+
+  &.button-tablet-medium {
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+
+  &.button-small {
+    @media (max-width: 768px) {
+    }
+  }
+}
+
+.btn-text-icon {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+
+  & .button-text {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: $color-green;
+  }
+
+  &.button-tablet-medium .button-text {
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+
+  & img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.btn-icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  & .button-text {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: $color-green;
+  }
+
+  &.button-tablet-medium .button-text {
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+
+  & img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.btn-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #fff;
+
+  & img {
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 30px 0 rgba(0, 79, 176, 0.2);
+  }
+
+  &.button-desktop-large {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 10px 30px 0 rgba(0, 79, 176, 0.1);
+  }
+
+  &.button-tablet-medium {
+    @media (max-width: 1200px) {
+      width: 32px;
+      height: 32px;
+      box-shadow: 0 10px 30px 0 rgba(0, 79, 176, 0.1);
+    }
+  }
+}
+
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+
+  & img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) saturate(100%) invert(6%) sepia(5%) saturate(4228%)
+      hue-rotate(182deg) brightness(101%) contrast(88%);
+  }
+
+  &:hover {
+    background-color: $color-gray;
+  }
+
+  &.button-desktop-large {
+    width: 32px;
+    height: 32px;
+
+    & img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &.button-tablet-medium {
+    width: 24px;
+    height: 24px;
+
+    @media (max-width: 1200px) {
+      & img {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}
+
+.btn-close {
+  width: 16px;
+  height: 16px;
+
+  &:hover img {
+    filter: brightness(0) saturate(100%) invert(6%) sepia(5%) saturate(4228%)
+      hue-rotate(182deg) brightness(101%) contrast(88%);
+  }
+}
