@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ui-kit
+    </title>
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <body class="body">
+      <div class="container">   
+        <section class="buttonsSection">
+          <h2 class="buttonsSection__title">Buttons</h2>
+          <div class="buttonsSection__container">
+            <h3 class="buttonsSection__subtitle">Button Primary</h3>
+            <button class="button-small button-tablet-medium button-desktop-large btn-primary" data-open-modal="" type="button"><span class="button-text">Попробовать бесплатно</span>
+            </button>
+            <h3 class="buttonsSection__subtitle">Button Secondary</h3>
+            <button class="button-small button-tablet-medium button-desktop-large btn-secondary" data-open-modal="" type="button"><span class="button-text">Попробовать бесплатно</span>
+            </button>
+            <h3 class="buttonsSection__subtitle">Button Text</h3>
+            <h3 class="buttonsSection__box"><a class="button-small button-tablet-medium button-desktop-large btn-text" href="https://google.com/" target="_blank"><span class="button-text">Button</span></a><a class="button-small button-tablet-medium button-desktop-large btn-text-icon" href="https://google.com/" target="_blank"><img class="button-icon" src="../assets/icons/check.svg" alt="check"/><span class="button-text">Button</span></a><a class="button-small button-tablet-medium button-desktop-large btn-icon-text" href="https://google.com/" target="_blank"><img class="button-icon" src="../assets/icons/check.svg" alt="check"/><span class="button-text">Button</span></a>
+            </h3>
+            <h3 class="buttonsSection__subtitle">Button Circle White</h3><a class="button-small button-tablet-medium button-desktop-large btn-circle" href="https://google.com/" target="_blank"><img class="button-icon" src="../assets/icons/arrow.svg" alt="arrow"/></a>
+            <h3 class="buttonsSection__subtitle">Button Icon</h3><a class="button-small button-tablet-medium button-desktop-large btn-icon" href="https://google.com/" target="_blank"><img class="button-icon" src="../assets/icons/arrow.svg" alt="arrow"/></a>
+            <h3 class="buttonsSection__subtitle">Button Close</h3>
+            <button class="button-small button-tablet-medium button-desktop-large btn-close" data-open-modal="" type="button"><img class="button-icon" src="../assets/icons/close.svg" alt="close"/>
+            </button>
+          </div>
+        </section>
+        <section class="headingsSection">
+          <h2 class="headingsSection__title">Titles</h2>
+          <div class="headingsSection__container">
+            <h1 class="heading-small heading-tablet-medium heading-desktop-large heading">Title Extra Large</h1>
+            <h2 class="heading-small heading-tablet-medium heading-desktop-large heading">Title Large</h2>
+            <h3 class="heading-small heading-tablet-medium heading-desktop-large heading">Title Medium</h3>
+            <h4 class="heading-small heading-tablet-medium heading-desktop-large heading">Title Small</h4>
+          </div>
+        </section>
+        <section class="textSection">
+          <h2 class="textSection__title">Body text</h2>
+          <div class="textSection__container">
+            <p class="text-small text-tablet-medium text-desktop-large body-text-22">Body text</p>
+            <p class="text-small text-tablet-medium text-desktop-large body-text-20">Body text</p>
+            <p class="text-small text-tablet-medium text-desktop-large body-text-18">Body text</p>
+            <p class="text-small text-tablet-medium text-desktop-large body-text-16">Body text</p>
+            <p class="text-small text-tablet-medium text-desktop-large body-text-14">Body text</p>
+          </div>
+        </section>
+        <section class="inputsSection">
+          <h2 class="inputsSection__title">Inputs</h2>
+          <div class="inputsSection__container">
+            <div class="input-wrapper">
+              <label>Label</label>
+              <div class="input-container">
+                <input class="input default" type="text" placeholder=""/>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label>Label</label>
+              <div class="input-container">
+                <input class="input text" type="text" placeholder="Text"/><img class="input-icon" src="./assets/icons/close.svg" alt="close icon"/>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label>Label</label>
+              <div class="input-container">
+                <input class="input active" type="text" placeholder=""/><img class="input-icon" src="./assets/icons/close.svg" alt="close icon"/>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label>Label</label>
+              <div class="input-container">
+                <input class="input error" type="text" placeholder="Text"/><img class="input-icon" src="./assets/icons/close.svg" alt="close icon"/>
+              </div>
+              <div class="error-box"> <img class="error-icon" src="./assets/icons/error.svg" alt="error icon"/>
+                <p class="error-text">Supporting text</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="modalSection">
+          <h2 class="modalSection__title">Modal</h2>
+          <div class="modalSection__container">
+            <button class="button-small button-tablet-medium button-desktop-large btn-primary" data-open-modal="call-modal" type="button"><span class="button-text">Заказать звонок</span>
+            </button>
+            <button class="button-small button-tablet-medium button-desktop-large btn-primary" data-open-modal="order-modal" type="button"><span class="button-text">Отправить заявку</span>
+            </button>
+          </div>
+          <div class="modal modal" id="call-modal">
+            <div class="modal__container">
+              <button class="button-small button-tablet-medium button-desktop-large btn-close" data-open-modal="" type="button"><img class="button-icon" src="../assets/icons/close.svg" alt="close"/>
+              </button>
+              <div class="modal__content">
+                <h2 class="modal__title">Оставьте заявку</h2>
+                <h6 class="modal__subtitle">Наш менеджер перезвонит вам и ответит на все Ваши вопросы.</h6>
+                <form class="modal__form" action="!#" method="POST">
+                  <div class="modal__inputs-container">
+                    <div class="modal__name-box">
+                      <div class="input-wrapper">
+                        <label>Имя</label>
+                        <div class="input-container">
+                          <input class="input default" type="text" placeholder=""/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal__phone-box">
+                      <div class="input-wrapper">
+                        <label>Телефон</label>
+                        <div class="input-container">
+                          <input class="input default" type="text" placeholder="+7"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal__email-box">
+                      <div class="input-wrapper">
+                        <label>Email</label>
+                        <div class="input-container">
+                          <input class="input default" type="text" placeholder=""/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="button-small button-tablet-medium button-desktop-large btn-primary" data-open-modal="" type="submit"><span class="button-text">Отправить</span>
+                  </button>
+                  <p class="modal__agree-text">Оставляя заявку, вы соглашаетесь на обработку ваших персональных данных на условиях, определяемых <a href="#" class="modal__agree-link">политикой конфиденциальности<a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal modal" id="order-modal">
+            <div class="modal__container">
+              <button class="button-small button-tablet-medium button-desktop-large btn-close" data-open-modal="" type="button"><img class="button-icon" src="../assets/icons/close.svg" alt="close"/>
+              </button>
+              <div class="modal__content">
+                <h2 class="modal__title">Сделайте заказ</h2>
+                <h6 class="modal__subtitle">Наш менеджер перезвонит вам и ответит на все Ваши вопросы.</h6>
+                <form class="modal__form" action="!#" method="POST">
+                  <div class="modal__inputs-container">
+                    <div class="modal__name-box">
+                      <div class="input-wrapper">
+                        <label>Имя</label>
+                        <div class="input-container">
+                          <input class="input default" type="text" placeholder=""/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal__phone-box">
+                      <div class="input-wrapper">
+                        <label>Телефон</label>
+                        <div class="input-container">
+                          <input class="input default" type="text" placeholder="+7"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal__email-box">
+                      <div class="input-wrapper">
+                        <label>Email</label>
+                        <div class="input-container">
+                          <input class="input default" type="text" placeholder=""/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="button-small button-tablet-medium button-desktop-large btn-primary" data-open-modal="" type="button"><span class="button-text">Отправить</span>
+                  </button>
+                  <p class="modal__agree-text">Оставляя заявку, вы соглашаетесь на обработку ваших персональных данных на условиях, определяемых <a href="#" class="modal__agree-link">политикой конфиденциальности<a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="dropdownSection">
+          <h2 class="dropdownSection__title">Dropdown</h2>
+          <div class="dropdownSection__container">
+            <div class="dropdown">
+              <div class="dropdown__button"><span class="dropdown__button-text">Text1</span><img class="dropdown__button-icon" src="./assets/icons/arrow-down.svg" alt="arrow down"/></div>
+              <div class="dropdown__content">
+                <div class="dropdown__item selected" data-value="option1"><span class="dropdown__item-text">Text1</span><img class="dropdown__item-icon" src="./assets/icons/check.svg" alt="check"/></div>
+                <div class="dropdown__item" data-value="option2"><span class="dropdown__item-text">Text2</span><img class="dropdown__item-icon" src="./assets/icons/check.svg" alt="check"/></div>
+                <div class="dropdown__item" data-value="option3"><span class="dropdown__item-text">Text3</span><img class="dropdown__item-icon" src="./assets/icons/check.svg" alt="check"/></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <header class="header">
+        <div class="header__top">
+          <div class="header__wrapper top-wrapper">
+            <div class="header__top-nav">
+              <ul class="header__top-list">
+                <li class="header__top-item"><a class="header__top-link" href="#">About Us</a></li>
+                <li class="header__top-item"><a class="header__top-link" href="#">Reviews</a></li>
+                <li class="header__top-item"><a class="header__top-link" href="#">Blog</a></li>
+                <li class="header__top-item"><a class="header__top-link" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="header__top-center">Serving Greater Greenville and surrounding areas</div>
+            <div class="header__top-right">
+              <div class="header__google-pic"><img class="header__google-image" src="./assets/icons/google.svg" alt="google"></div>
+              <div class="header__top-number">| 400+ 5-star reviews       </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__wrapper bottom-wrapper">
+            <div class="header__logo"><img class="header__logo-image" src="./assets/icons/logo.svg" alt="logo"></div>
+            <div class="header__service-button"><img class="header__service-image" src="./assets/icons/burger.svg" alt="burger"><img class="header__service-close" src="./assets/icons/close.svg" alt="close"><span class="header__service-text">Services</span></div>
+            <div class="header__bottom-nav">
+              <ul class="header__bottom-list">
+                <li class="header__bottom-item"><a class="header__bottom-link" href="#">emergency</a></li>
+                <li class="header__bottom-item"><a class="header__bottom-link" href="#">Service Plans</a></li>
+                <li class="header__bottom-item"><a class="header__bottom-link" href="#">Financing</a></li>
+                <li class="header__bottom-item"><a class="header__bottom-link" href="#">Specials</a></li>
+                <li class="header__bottom-item"><a class="header__bottom-link" href="#">SERVICE AREAS</a></li>
+              </ul>
+            </div>
+            <div class="header__bottom-right"><a class="header__phone-box" href="tel:(864) 210-9111"><img class="header__phone-image" src="./assets/icons/phone.svg" alt="phone"><span class="header__phone-text">(864) 210-9111</span></a>
+              <div class="header__button">Schedule now</div>
+            </div>
+          </div>
+        </div>
+        <div class="header__mobile"><a class="header__mobile-phone" href="tel:(864) 210-9111"><img class="header__phone-image" src="./assets/icons/phone-mobile.svg" alt="phone"></a>
+          <div class="header__mobile-logo"><img class="header__logo-image" src="./assets/icons/logo-mobile.svg" alt="logo"></div>
+          <div class="header__mobile-burger"><img class="header__burger-image" src="./assets/icons/burger-mobile.svg" alt="burge"><img class="header__burger-close" src="./assets/icons/close.svg" alt="close"></div>
+        </div>
+        <div class="header__service service">
+          <div class="service__wrapper">
+            <div class="header__top-nav mobile">
+              <ul class="header__top-list">
+                <li class="header__top-item"><a class="header__top-link" href="#">About Us</a></li>
+                <li class="header__top-item"><a class="header__top-link" href="#">Reviews</a></li>
+                <li class="header__top-item"><a class="header__top-link" href="#">Blog</a></li>
+                <li class="header__top-item"><a class="header__top-link" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="header__bottom-nav mobile">
+              <ul class="header__bottom-list">
+                <li class="header__bottom-item"><a class="header__bottom-link" href="#">emergency</a></li>
+                <li class="header__bottom-item"><a class="header__bottom-link" href="#">Service Plans</a></li>
+                <li class="header__bottom-item"><a class="header__bottom-link" href="#">Financing</a></li>
+                <li class="header__bottom-item"><a class="header__bottom-link" href="#">Specials</a></li>
+                <li class="header__bottom-item"><a class="header__bottom-link" href="#">SERVICE AREAS</a></li>
+              </ul>
+            </div>
+            <div class="service__grid">
+              <div class="service__column">
+                <h5 class="service__title">AirCare</h5>
+                <ul class="service__list">
+                  <li class="service__item"><a class="service__link" href="#">Cooling</a></li>
+                  <li class="service__item"><a class="service__link" href="#">Heating</a></li>
+                  <li class="service__item"><a class="service__link" href="#">Indoor air quality</a></li>
+                  <li class="service__item"><a class="service__link" href="#">Ducts, Vents, &amp; airflow</a></li>
+                </ul>
+              </div>
+              <div class="service__column">
+                <h5 class="service__title">PowerCare</h5>
+                <ul class="service__list">
+                  <li class="service__item"><a class="service__link" href="#">Electrical</a></li>
+                  <li class="service__item"><a class="service__link" href="#">whole-home Generators</a></li>
+                  <li class="service__item"><a class="service__link" href="#">Gas plumbing</a></li>
+                </ul>
+              </div>
+              <div class="service__column">
+                <h5 class="service__title">PowerCare</h5>
+                <ul class="service__list">
+                  <li class="service__item"><a class="service__link" href="#">Plumbing</a></li>
+                  <li class="service__item"><a class="service__link" href="#">Water quality</a></li>
+                  <li class="service__item"><a class="service__link" href="#">Water heaters</a></li>
+                  <li class="service__item"><a class="service__link" href="#">Sump pumps</a></li>
+                  <li class="service__item"><a class="service__link" href="#">Water leak detection &amp; repairs</a></li>
+                  <li class="service__item"><a class="service__link" href="#">Septic</a></li>
+                  <li class="service__item"><a class="service__link" href="#">Sewer &amp; Drains</a></li>
+                </ul>
+              </div>
+              <div class="service__box"><img class="service__box-image" src="./assets/icons/service-1.svg" alt="service"><a class="service__box-text">emergency service</a></div>
+              <div class="service__box"><img class="service__box-image" src="./assets/icons/service-2.svg" alt="service"><a class="service__box-text">Inspections & Energy Audits</a></div>
+              <div class="service__box"><img class="service__box-image" src="./assets/icons/service-3.svg" alt="service"><a class="service__box-text">Service Plans</a></div>
+              <div class="service__card">
+                <div class="service__box-pic"><img class="service__box-image" src="./assets/icons/box.svg" alt="box"></div>
+                <div class="service__card-content">
+                  <p class="service__card-text">$100 off</p>
+                  <p class="service__card-text">First-time customer</p>
+                </div>
+              </div>
+              <div class="service__card">
+                <div class="service__box-pic"><img class="service__box-image" src="./assets/icons/percent.svg" alt="percent"></div>
+                <div class="service__card-content">
+                  <p class="service__card-text">Get a Gree Flexx Eco</p>
+                  <p class="service__card-text">as Low as $76</p>
+                </div>
+              </div>
+              <div class="service__card">
+                <div class="service__box-pic"><img class="service__box-image" src="./assets/icons/google-2.svg" alt="google"></div>
+                <div class="service__card-content">
+                  <p class="service__card-text">400+</p>
+                  <p class="service__card-text">5-star reviews</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </body>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
