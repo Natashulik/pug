@@ -1,4 +1,4 @@
-//@import "./fonts";
+@import "./fonts";
 @import "./variables";
 @import "../pug/mixins/mixinsStyles.scss";
 @import "./components/_buttonsSection.scss";
@@ -7,6 +7,7 @@
 @import "./components/_inputsSection.scss";
 @import "./components/_modalSection.scss";
 @import "./components/_dropdownSection.scss";
+@import "./components/_headerSection.scss";
 
 *,
 *::after,
@@ -32,14 +33,7 @@ body {
   max-width: $max-width;
   width: 100%;
   margin: 0 auto;
-  padding-block: 50px;
-  padding-inline: 120px;
   @include responsive-sizing(padding-inline, 15, 120, 768, 1920);
-}
-
-.wrapper {
-  max-width: 1240px;
-  margin: 0 auto;
 }
 
 ul,

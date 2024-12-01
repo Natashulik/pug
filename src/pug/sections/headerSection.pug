@@ -1,0 +1,113 @@
+-
+  var columns = [
+    {title: "AirCare", items: ["Cooling", "Heating", "Indoor air quality", "Ducts, Vents, & airflow"]},
+    {title: "PowerCare", items: ["Electrical", "whole-home Generators", "Gas plumbing"]},
+    {title: "PowerCare", items: ["Plumbing", "Water quality", "Water heaters", "Sump pumps", "Water leak detection & repairs", "Septic", "Sewer & Drains"]},
+  ]
+
+  var cards= [
+    {src: "./assets/icons/box.svg", alt: "box", textTop: "$100 off", textBottom: "First-time customer" },
+    {src: "./assets/icons/percent.svg", alt: "percent", textTop: "Get a Gree Flexx Eco", textBottom: "as Low as $76" },
+    {src: "./assets/icons/google-2.svg", alt: "google", textTop: "400+", textBottom: "5-star reviews" }, 
+  ]
+
+header.header
+  .header__top
+    .header__wrapper.top-wrapper
+      .header__top-nav
+        ul.header__top-list
+          li.header__top-item
+            a.header__top-link(href="#") About Us
+          li.header__top-item
+            a.header__top-link(href="#") Reviews
+          li.header__top-item
+            a.header__top-link(href="#") Blog
+          li.header__top-item
+            a.header__top-link(href="#") Contact Us
+      .header__top-center Serving Greater Greenville and surrounding areas
+      .header__top-right
+        .header__google-pic
+          img.header__google-image(src="./assets/icons/google.svg" alt="google") 
+        .header__top-number | 400+ 5-star reviews       
+  .header__bottom
+    .header__wrapper.bottom-wrapper
+      .header__logo
+        img.header__logo-image(src="./assets/icons/logo.svg" alt="logo")
+      .header__service-button
+        img.header__service-image(src="./assets/icons/burger.svg" alt="burger")
+        img.header__service-close(src="./assets/icons/close.svg" alt="close")
+        span.header__service-text Services
+      .header__bottom-nav
+        ul.header__bottom-list
+          li.header__bottom-item
+            a.header__bottom-link(href="#") emergency
+          li.header__bottom-item
+            a.header__bottom-link(href="#") Service Plans
+          li.header__bottom-item
+            a.header__bottom-link(href="#") Financing
+          li.header__bottom-item
+            a.header__bottom-link(href="#") Specials
+          li.header__bottom-item
+            a.header__bottom-link(href="#") SERVICE AREAS
+      .header__bottom-right
+        a.header__phone-box(href="tel:(864) 210-9111")
+          img.header__phone-image(src="./assets/icons/phone.svg" alt="phone")
+          span.header__phone-text (864) 210-9111
+        .header__button Schedule now
+  .header__mobile
+    a.header__mobile-phone(href="tel:(864) 210-9111")
+      img.header__phone-image(src="./assets/icons/phone-mobile.svg" alt="phone")
+    .header__mobile-logo
+      img.header__logo-image(src="./assets/icons/logo-mobile.svg" alt="logo")
+    .header__mobile-burger
+      img.header__burger-image(src="./assets/icons/burger-mobile.svg" alt="burge")
+      img.header__burger-close(src="./assets/icons/close.svg" alt="close")
+  .header__service.service
+    .service__wrapper
+      .header__top-nav.mobile
+        ul.header__top-list
+          li.header__top-item
+            a.header__top-link(href="#") About Us
+          li.header__top-item
+            a.header__top-link(href="#") Reviews
+          li.header__top-item
+            a.header__top-link(href="#") Blog
+          li.header__top-item
+            a.header__top-link(href="#") Contact Us
+      .header__bottom-nav.mobile
+        ul.header__bottom-list
+          li.header__bottom-item
+            a.header__bottom-link(href="#") emergency
+          li.header__bottom-item
+            a.header__bottom-link(href="#") Service Plans
+          li.header__bottom-item
+            a.header__bottom-link(href="#") Financing
+          li.header__bottom-item
+            a.header__bottom-link(href="#") Specials
+          li.header__bottom-item
+            a.header__bottom-link(href="#") SERVICE AREAS
+      .service__grid
+        each column in columns
+          .service__column
+            h5.service__title=column.title
+            ul.service__list
+              each item in column.items
+                li.service__item
+                  a.service__link(href="#")=item
+        .service__box
+          img.service__box-image(src="./assets/icons/service-1.svg" alt="service")
+          a.service__box-text emergency service
+        .service__box
+          img.service__box-image(src="./assets/icons/service-2.svg" alt="service")
+          a.service__box-text Inspections & Energy Audits
+        .service__box
+          img.service__box-image(src="./assets/icons/service-3.svg" alt="service")
+          a.service__box-text Service Plans
+        each card in cards
+          .service__card
+            .service__box-pic
+              img.service__box-image(src=card.src alt=card.alt)
+            .service__card-content
+              p.service__card-text=card.textTop
+              p.service__card-text=card.textBottom
+          

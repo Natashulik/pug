@@ -74,4 +74,39 @@ document.addEventListener("DOMContentLoaded", () => {
       dropdownBtn.classList.remove("show");
     }
   });
+
+  //header
+  const serviceBtn = document.querySelector(".header__service-button");
+  const serviceBlock = document.querySelector(".header__service");
+  const burgerIcon = document.querySelector(".header__service-image");
+  const crossIcon = serviceBtn.querySelector(".header__service-close");
+
+  serviceBtn.addEventListener("click", function () {
+    serviceBlock.classList.toggle("show");
+
+    if (serviceBlock.classList.contains("show")) {
+      burgerIcon.style.display = "none";
+      crossIcon.style.display = "block";
+    } else {
+      burgerIcon.style.display = "block";
+      crossIcon.style.display = "none";
+    }
+  });
+
+  //burger
+  const burgerBtn = document.querySelector(".header__mobile-burger");
+  const burgerCloseIcon = document.querySelector(" .header__burger-close");
+  const burgerBurgerIcon = document.querySelector(" .header__burger-image");
+
+  burgerBtn.addEventListener("click", function () {
+    serviceBlock.classList.toggle("show");
+
+    if (serviceBlock.classList.contains("show")) {
+      burgerBurgerIcon.style.display = "none";
+      burgerCloseIcon.style.display = "block";
+    } else {
+      burgerBurgerIcon.style.display = "block";
+      burgerCloseIcon.style.display = "none";
+    }
+  });
 });
