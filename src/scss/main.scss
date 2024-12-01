@@ -34,6 +34,7 @@ body {
   margin: 0 auto;
   padding-block: 50px;
   padding-inline: 120px;
+  @include responsive-sizing(padding-inline, 15, 120, 768, 1920);
 }
 
 .wrapper {

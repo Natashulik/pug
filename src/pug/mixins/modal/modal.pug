@@ -3,7 +3,7 @@ mixin modal(id, title, subtitle)
     .modal__container
       +button(null, "btn-close", "close")
       .modal__content
-        .modal__title #{title}
-        .modal__subtitle #{subtitle}
-        form.modal__form(action="#" method="POST")
+        h2.modal__title #{title}
+        h6.modal__subtitle #{subtitle}
+        form.modal__form(action="!#" method="POST")
           block
