@@ -6,6 +6,7 @@
   font-weight: 700;
   line-height: 140%;
   color: #fff;
+  text-decoration: none;
 
   &:hover {
     background-color: $color-green-hover;
@@ -55,6 +56,7 @@
   font-weight: 700;
   line-height: 140%;
   color: $color-green;
+  text-decoration: none;
 
   &:hover {
     background-color: $color-green-light-hover;
@@ -94,6 +96,7 @@
   font-weight: 700;
   line-height: 140%;
   color: $color-green;
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
@@ -121,6 +124,7 @@
   flex-direction: row-reverse;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
 
   & .button-text {
     font-family: $font-family;
@@ -146,6 +150,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
 
   & .button-text {
     font-family: $font-family;
@@ -173,6 +178,7 @@
   align-items: center;
   border-radius: 100px;
   background: #fff;
+  text-decoration: none;
 
   & img {
     width: 18px;
@@ -203,6 +209,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 100px;
+  text-decoration: none;
 
   & img {
     width: 16px;
@@ -242,6 +249,7 @@
   width: 16px;
   height: 16px;
   background-color: transparent;
+  text-decoration: none;
 
   &:hover img {
     filter: brightness(0) saturate(100%) invert(6%) sepia(5%) saturate(4228%)
