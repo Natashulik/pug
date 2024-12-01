@@ -241,6 +241,7 @@
 .btn-close {
   width: 16px;
   height: 16px;
+  background-color: transparent;
 
   &:hover img {
     filter: brightness(0) saturate(100%) invert(6%) sepia(5%) saturate(4228%)

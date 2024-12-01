@@ -1,0 +1,25 @@
+section.modalSection
+  h2.modalSection__title Modal
+  .modalSection__container
+    +button("Заказать звонок", 'btn-primary', null, 'call-modal')
+    +button("Отправить заявку", 'btn-primary', null, 'order-modal')
+  +modal("call-modal", "Оставьте заявку", "Наш менеджер перезвонит вам и ответит на все Ваши вопросы.")
+    .modal__inputs-container
+      .modal__name-box
+        +input('Имя', 'default', '', '')
+      .modal__phone-box
+        +input('Телефон', 'default', '+7', '')          
+      .modal__email-box
+        +input('Email', 'default', '', '')
+    +button("Отправить", 'btn-primary', null, '', 'submit')
+    p.modal__agree-text Оставляя заявку, вы соглашаетесь на обработку ваших персональных данных на условиях, определяемых <a href="#" class="modal__agree-link">политикой конфиденциальности<a>
+  +modal("order-modal", "Сделайте заказ", "Наш менеджер перезвонит вам и ответит на все Ваши вопросы.")
+    .modal__inputs-container
+      .modal__name-box
+        +input('Имя', 'default', '', '')
+      .modal__phone-box
+        +input('Телефон', 'default', '+7', '')          
+      .modal__email-box
+        +input('Email', 'default', '', '')
+    +button("Отправить", "btn-primary", null, '')
+    p.modal__agree-text Оставляя заявку, вы соглашаетесь на обработку ваших персональных данных на условиях, определяемых <a href="#" class="modal__agree-link">политикой конфиденциальности<a>

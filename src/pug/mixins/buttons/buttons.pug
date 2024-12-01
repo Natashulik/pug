@@ -1,5 +1,5 @@
-mixin button(text=null, type='', icon=null)
-  button(class=`button-small button-tablet-medium button-desktop-large ${type}`)
+mixin button(text=null, style='', icon=null, data='', type="button")
+  button(class=`button-small button-tablet-medium button-desktop-large ${style}`  data-open-modal=data  type=type)
     if icon
       img(class="button-icon" src=`../assets/icons/${icon}.svg` alt=`${icon}`)
     if text

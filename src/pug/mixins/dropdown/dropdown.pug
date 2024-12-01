@@ -1,0 +1,13 @@
+mixin dropdown(options)
+  .dropdown
+    .dropdown__button
+      span.dropdown__button-text= options[0].text
+      img.dropdown__button-icon(src="./assets/icons/arrow-down.svg" alt="arrow down")
+    .dropdown__content
+      each option, index in options
+        .dropdown__item(
+          data-value=option.value,
+          class=(index === 0 ? "selected" : "")
+        )
+          span.dropdown__item-text= option.text
+          img.dropdown__item-icon(src="./assets/icons/check.svg" alt="check")

@@ -1,0 +1,11 @@
+mixin input(label, state,  placeholder='', errorText='',)
+  .input-wrapper
+    label= label
+    .input-container
+      input(type="text" class=`input ${state}` placeholder=placeholder)
+      if state !== 'default'
+        img.input-icon(src="./assets/icons/close.svg" alt="close icon")
+    if state === 'error'
+      .error-box  
+        img.error-icon(src="./assets/icons/error.svg" alt="error icon")
+        p.error-text= errorText
